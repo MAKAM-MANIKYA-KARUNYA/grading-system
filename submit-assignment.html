@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Submit Assignment</h1>
+        <nav>
+            <ul>
+                <li><a href="student-dashboard.html">Dashboard</a></li>
+                <li><a href="grades.html">View Grades</a></li>
+                <li><a href="index.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="submit-assignment-form">
+            <label for="assignment-title">Assignment Title:</label>
+            <input type="text" id="assignment-title" name="assignment-title" required>
+
+            <label for="assignment-file">Upload Assignment:</label>
+            <input type="file" id="assignment-file" name="assignment-file" accept=".pdf,.doc,.docx,.ppt,.pptx" required>
+
+            <label for="comments">Comments (optional):</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit">Submit Assignment</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Assignment Submission Platform</p>
+    </footer>
+</body>
+</html>
